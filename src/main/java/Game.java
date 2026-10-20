@@ -3,6 +3,8 @@ public class Game {
     public void play() {
         boolean playing = true;
 
+        IO.println("Välkommen ill världens bästa tärningsspel");
+
         while (playing) {
             String firstName1 = readName("Spelare 1 förnamn: ");
             String lastName1 = readName("Spelare 1 efternamn: ");
@@ -42,6 +44,8 @@ public class Game {
                 playing = false;
             }
         }
+
+        IO.println("Tack & hejdå!!");
     }
 
     private String readName(String message) {
